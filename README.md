@@ -42,7 +42,7 @@ Portal Berita Digital adalah sebuah platform web untuk mempublikasikan, mengelol
 
 1. **Manajemen Artikel (CRUD)**
 
-   * Create: Menambah artikel baru dengan judul, konten, penulis, kategori, tanggal publikasi, dan status (draft/published).
+   * Create: Menambah artikel baru dengan judul, konten, penulis, kategori, dan status (draft/published).
    * Read: Melihat daftar artikel dan detail artikel.
    * Update: Mengubah konten atau status artikel.
    * Delete: Menghapus artikel.
@@ -52,7 +52,7 @@ Portal Berita Digital adalah sebuah platform web untuk mempublikasikan, mengelol
    * Create: Menambah kategori baru (nama dan deskripsi).
    * Read: Melihat daftar kategori.
    * Update: Mengubah nama atau deskripsi kategori.
-   * Delete: Menghapus kategori (dengan validasi penggunaan).
+   * Delete: Menghapus kategori.
 
 3. **Autentikasi Dasar**
 
@@ -68,6 +68,11 @@ Portal Berita Digital adalah sebuah platform web untuk mempublikasikan, mengelol
 5. **Integrasi API**
 
    * Komunikasi frontend-backend menggunakan Axios atau Fetch API.
-
+   
+6. **Login Admin & Autentikasi**
+   * Halaman login untuk admin dengan form input username dan password.
+   * Proses login akan mengirim kredensial ke backend dan mendapatkan token autentikasi (jika menggunakan JWT) atau header Basic Auth.
+   * Hanya admin yang berhasil login yang dapat mengakses halaman manajemen artikel dan kategori (CRUD).
+   * Implementasi proteksi rute di frontend menggunakan mekanisme Protected Route.
 ---
 
